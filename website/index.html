@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ctrl Alt Tobi</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="mediaqueries.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ctrl Alt Tobi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#projects">Playground</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Ctrl Alt Tobi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Playground</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/chill_guy1.JPG" alt="Tobi Emmanuel profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"></p>
+            <h1 class="title">Howdy!</h1>
+            <p class="section__text__p2">This is a test Site.</p>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="projects">
+        <p class="section__text__p1"> Play, Smash, or Honor!</p>
+        <h1 class="title">Playground</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/mario-ezgif.com-resize.gif" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Memory Game</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://memory.toys/classic/easy/'">
+                            Play!
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/fire-ezgif.com-resize.gif" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Smash The Wall!</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://smashthewalls.com/'">
+                            Smash!
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/cooldog-ezgif.com-resize.gif" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pug in a Rug</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://puginarug.com/'">
+                            Honor the Pug!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
