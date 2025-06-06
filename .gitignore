@@ -1,5 +1,17 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log
+
+# VS Code
 *.vscode/
-*.exe
+
+# Docker
 *.out
+*.exe
 *.o
 debug/
+Dockerfile
+
+# Git folders (optional — only if you're copying from somewhere)
+.git/
