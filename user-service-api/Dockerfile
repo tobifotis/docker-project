@@ -1,6 +1,13 @@
-FROM node:latest
+FROM node:22.16.0-alpine
+
 WORKDIR /app
-ADD package*.json ./
+
+COPY package*.json ./
+
 RUN npm install
-ADD . .
+
+COPY . .
+
+EXPOSE 3000
+
 CMD ["node", "index.js"]
